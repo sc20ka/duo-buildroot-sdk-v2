@@ -15,6 +15,7 @@ if test $? != 0 ; then
 fi
 
 # Sanity check for CWD in LD_LIBRARY_PATH
+unset LD_LIBRARY_PATH
 case ":${LD_LIBRARY_PATH:-unset}:" in
 (*::*|*:.:*)
 	echo
